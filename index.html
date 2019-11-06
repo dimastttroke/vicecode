@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ViceCode - Мобильные приложения нового уровня</title>
+    <link rel="stylesheet" type="text/css" href="css/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Marquiz script start -->
+    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init({ 
+            id: '5d809db3eed0c200440e311c', 
+            autoOpen: false, 
+            autoOpenFreq: 'once', 
+            openOnExit: false 
+        });
+    });
+    </script>
+    <!-- Marquiz script end -->
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K6ZRGQM');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6ZRGQM" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="global-wrapper scroll-disable">
+
+        <div class="bg-main"></div>
+        <div class="bg-blur"></div>
+        <div class="modal">
+            <div class="modal__wrap">
+                <a href="#" class="js-close-modal"><img src="images/close.png" alt=""></a>
+                <div class="modal__form">
+                    <div class="modal__title">
+                        Оставьте заявку и наш менеджер свяжется с Вами
+                    </div>
+                    <form id="modal-form" class="modal__form">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        <input type="text" id="tel" name="tel" class="phone-mask" placeholder="Ваш телефон" required>
+                        <button type="submit" class="btn-modal" href="#">Связаться с нами</button>
+                    </form>
+                </div>
+                <div class="modal__agree">
+                    Нажимая кнопку “Связаться с нами” Вы даете согласие на<br> обработку Ваших персональных данных
+                </div>
+            </div>
+        </div>
+
+        <div class="banter-loader">
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+        </div>
+        <div class="loader-bg"></div>
+
+        <div class="container main-container">
+
+            <header class="header">
+                <div class="header__wrap container flex flex-between">
+                    <div class="header__logo wow bounceIn">
+                        <a href="/"><img src="images/svg/logo.svg" alt=""></a>
+                    </div>
+                    <div class="header__contacts wow bounceIn">
+                        <a class="js-open-modal btn-default" id="js-move3" href="#" data-title="Связаться с нами"></a>
+                        <a class="header__mail" href="mailto:info@vicecode.ru">info@vicecode.ru</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+
+                <div class="content flex">
+                    <div class="content__left flex">
+                        <div class="content__main flex flex-align-center wow fadeInLeftBig">
+                            <div class="main__wrap">
+                                <h1>Разработка<br> мобильных<br> приложений</h1>
+                                <div class="main__description">Создаем серверную и клиентскую часть для мобильных приложений IOS и Android</div>
+                                <a class="btn-gradient" id="js-move" href="https://company.vicecode.ru/" target="_blank" data-title="Подробнее о компании"></a>
+                            </div>
+                            
+                            <!-- <div class="main__social flex">
+                                <div class="social__item"><a class="social__twitter" href="" target="_blank"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 314.652 314.652" style="enable-background:new 0 0 314.652 314.652;" xml:space="preserve"><g><path d="M157.326,0C70.576,0,0,70.576,0,157.326s70.576,157.326,157.326,157.326s157.326-70.576,157.326-157.326 S244.076,0,157.326,0z M157.326,296.652C80.502,296.652,18,234.15,18,157.326S80.502,18,157.326,18s139.326,62.502,139.326,139.326 S234.15,296.652,157.326,296.652z"/><path d="M188.326,132.806c4.971,0,9-4.029,9-9s-4.029-9-9-9h-53v-9.146c0-4.971-4.029-9-9-9s-9,4.029-9,9v59.448 c0,29.161,23.724,52.886,52.885,52.886h18.115c4.971,0,9-4.029,9-9s-4.029-9-9-9h-18.115c-19.235,0-34.885-15.649-34.885-34.886 v-32.302H188.326z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a></div>
+                                <div class="social__item"><a class="social__google" href="" target="_blank"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve"><g><g><path d="M349.146,402.251c0-30.016-17.387-44.815-36.525-60.922l-15.662-12.185c-4.785-3.895-11.294-9.124-11.294-18.693 c0-9.57,6.537-15.662,12.184-21.309c18.249-14.354,36.526-29.571,36.526-61.756c0-33.076-20.892-50.462-30.878-58.724l0,0h26.956 L358.271,153h-89.603c-23.479,0-53.049,3.478-77.863,23.924c-18.693,16.079-27.818,38.278-27.818,58.279 c0,33.911,26.093,68.294,72.188,68.294c4.368,0,9.125-0.445,13.937-0.863c-2.17,5.23-4.34,9.569-4.34,16.97 c0,13.464,6.955,21.753,13.047,29.57c-19.556,1.308-56.109,3.478-83.065,20.001c-25.676,15.217-33.493,37.416-33.493,53.077 c0,32.186,30.461,62.201,93.525,62.201C309.561,484.454,349.146,443.116,349.146,402.251z M255.621,291.34 c-37.415,0-54.384-48.292-54.384-77.418c0-11.322,2.17-23.034,9.569-32.186c6.955-8.707,19.139-14.382,30.461-14.382 c36.108,0,54.802,48.738,54.802,80.033c0,7.845-0.862,21.754-10.877,31.768C278.237,286.11,266.498,291.312,255.621,291.34z M256.066,466.177c-46.54,0-76.556-22.171-76.556-53.049s27.846-41.311,37.416-44.787c18.276-6.093,41.755-6.982,45.677-6.982 c4.34,0,6.51,0,9.987,0.445c33.076,23.479,47.402,35.218,47.402,57.416C319.992,446.176,297.821,466.177,256.066,466.177z"/><polygon points="353.068,317.768 400.164,317.768 400.164,364.836 423.699,364.836 423.699,317.768 470.768,317.768 470.768,294.233 423.699,294.233 423.699,247.165 400.164,247.165 400.164,294.233 353.068,294.233"/><path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306 C474.995,612,612,474.995,612,306z M27.818,306C27.818,152.36,152.36,27.818,306,27.818S584.182,152.36,584.182,306 S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a></div>
+                                <div class="social__item"><a class="social__email" href="" target="_blank"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"><g><g><g id="circle_4_"><g><path d="M32,0C14.327,0,0,14.327,0,32s14.327,32,32,32s32-14.327,32-32S49.673,0,32,0z M32,62C15.432,62,2,48.568,2,32.001 C2,15.432,15.432,2,32,2c16.568,0,30,13.432,30,30.001C62,48.568,48.568,62,32,62z"/></g></g><g id="mail"><g><path d="M46,21H18c-1.104,0-2,0.896-2,2v18c0,1.104,0.896,2,2,2h28c1.104,0,2-0.896,2-2V23C48,21.896,47.104,21,46,21z M44.205,23L32,35L19.891,23H44.205z M18,41V24.006l9.589,9.589L20.061,41H18z M22.985,41l6.081-5.927l1.58,1.579 c0.781,0.781,2.047,0.781,2.829,0l1.531-1.531L41.087,41H22.985z M46,41h-1.939l-7.527-7.405L46,24.128V41z"/></g></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a></div>
+                            </div> -->
+
+                        </div>
+                        <div class="phones__about flex flex-align-center wow fadeInDownBig">
+                            <div class="about__text">
+                                <div class="about__card">
+                                    <h3>Что дает приложение?</h3>
+                                    <div class="text__block flex"><img src="images/success.png" alt="">
+                                        <div class="text__pre">
+                                            <p>Увеличивает продажи</p>
+                                            <p>Автоматизирует процессы</p>
+                                            <p>Повышает лояльность к бренду</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about__bottom">
+                                    <h2>Найдите новых клиентов<br> создав приложение</h2>
+                                    <a class="btn-rotate" id="js-move2" href="#popup:marquiz_5d809db3eed0c200440e311c" onclick="Marquiz.showModal('5d809db3eed0c200440e311c')" data-title="Рассчитать стоимость"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__phones flex">
+                        <div class="phones__list flex flex-align-center">
+                            <div class="phones__item wow fadeInUpBig" data-wow-delay="0s" data-bgclass="phones__bg phones__bg-black">
+                                <div class="phones__content">
+                                    <div class="phones__top">
+                                        <div class="phones__name">TW</div><img src="images/phone1.png" alt="">
+                                    </div>
+                                    <div class="phones__info"><a class="btn-simple" target="_blank" href="https://apps.apple.com/ru/app/techwiz/id1441515719">AppStore</a>
+                                        <div class="phones__subname">TW</div>
+                                        <div class="phones__description">Автоматизированы процессы получения и выполнения заявок для мастеров по ремонту компьютерной техники и их клиентов</div><a class="btn-link" target="_blank" href="https://apps.apple.com/ru/app/techwiz/id1441515719">подробнее...</a>
+                                        <img class="phones__devices" src="images/devices.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phones__item wow fadeInUpBig" data-wow-delay="0.4s" data-bgclass="phones__bg phones__bg-orange">
+                                <div class="phones__content">
+                                    <div class="phones__top">
+                                        <div class="phones__name">RetOn</div><img src="images/phone2.png" alt="">
+                                    </div>
+                                    <div class="phones__info"><a class="btn-simple" target="_blank" href="https://apps.apple.com/ru/app/reton/id1471118485">AppStore</a>
+                                        <div class="phones__subname">RetOn</div>
+                                        <div class="phones__description">Позволяет учитывать рабочее время специалиста по устранению неполадок бытовой техники, смотреть финансовую статистику</div><a class="btn-link" target="_blank" href="https://apps.apple.com/ru/app/reton/id1471118485">подробнее...</a>
+                                        <img class="phones__devices" src="images/devices.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phones__item wow fadeInUpBig" data-wow-delay="0.8s" data-bgclass="phones__bg phones__bg-green">
+                                <div class="phones__content">
+                                    <div class="phones__top">
+                                        <div class="phones__name">Complead</div><img src="images/phone3.png" alt="">
+                                    </div>
+                                    <div class="phones__info"><a class="btn-simple" target="_blank" href="https://apps.apple.com/ru/app/complead/id1405650750">AppStore</a>
+                                        <div class="phones__subname">Complead</div>
+                                        <div class="phones__description">Приложение для для организаций и пользователей, позволяющее присоединиться к партнерской программе</div><a class="btn-link" target="_blank" href="https://apps.apple.com/ru/app/complead/id1405650750">подробнее...</a>
+                                        <img class="phones__devices" src="images/devices.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mobile-footer">
+                <a href="#" class="js-open-modal btn-modal">Связаться с нами</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+    function initSite() {
+        $('.banter-loader').hide();
+        $('.loader-bg').hide();
+        $('.global-wrapper').removeClass('scroll-disable');
+        wow = new WOW({
+            mobile: false
+        });
+        wow.init();
+    }
+    setTimeout(initSite, 2500);
+    </script>
+
+    <script>
+        //Google reCaptcha v2: функция валидации имени и телефона
+        function validate(event) {
+            event.preventDefault();
+            function validateContact() {
+                var valid = true;
+                if(!$("#name").val()) {
+                    valid = false;
+                }
+                if(!$("#tel").val()) {
+                    valid = false;
+                }
+                return valid;
+            }
+            if (!validateContact()) {
+                $("#name").css('border','2px solid red');
+                $("#tel").css('border','2px solid red');
+            }
+        }
+        //Google reCaptcha v2: функция отправки формы
+        $('#modal-form').submit(function(e) {
+            e.preventDefault();
+            if (validate) {
+                var dataForm = $(this).serialize();
+                $.ajax({
+                    url: "/telegram.php",
+                    type: "POST",
+                    data: dataForm,
+                    success: function (response) {
+                        $('#modal-form').html('<p class="green">Заявка успешно отправлена! Вскоре мы с Вами свяжемся!</p>');
+                        gtag('event', 'otpravil', {
+                            'event_category': 'forma'
+                        });
+                        console.log('klik Форма Отправка 1');
+                    }
+                }); 
+            }
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140725386-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140725386-1');
+    </script>
+
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54411367, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54411367" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+    <script>
+    (function(w, d, u, i, o, s, p) {
+    if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+    w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+    s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+    p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+    mgo({calltracking: {id: 17691, elements: [{"selector":".mgo-number"}]}});
+    </script>
+        
+</body>
+
+</html>
