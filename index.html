@@ -12,31 +12,6 @@
     <script src="js/scripts.js"></script>
     <script src="js/wow.min.js"></script>
 
-    <!-- Marquiz script start -->
-    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        Marquiz.init({ 
-            id: '5d809db3eed0c200440e311c', 
-            autoOpen: false, 
-            autoOpenFreq: 'once', 
-            openOnExit: false 
-        });
-    });
-    </script>
-    <!-- Marquiz script end -->
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-K6ZRGQM');</script>
-    <!-- End Google Tag Manager -->
-
 </head>
 
 <body>
@@ -196,68 +171,6 @@
         wow.init();
     }
     setTimeout(initSite, 2500);
-    </script>
-
-    <script>
-        //Google reCaptcha v2: функция валидации имени и телефона
-        function validate(event) {
-            event.preventDefault();
-            function validateContact() {
-                var valid = true;
-                if(!$("#name").val()) {
-                    valid = false;
-                }
-                if(!$("#tel").val()) {
-                    valid = false;
-                }
-                return valid;
-            }
-            if (!validateContact()) {
-                $("#name").css('border','2px solid red');
-                $("#tel").css('border','2px solid red');
-            }
-        }
-        //Google reCaptcha v2: функция отправки формы
-        $('#modal-form').submit(function(e) {
-            e.preventDefault();
-            if (validate) {
-                var dataForm = $(this).serialize();
-                $.ajax({
-                    url: "/telegram.php",
-                    type: "POST",
-                    data: dataForm,
-                    success: function (response) {
-                        $('#modal-form').html('<p class="green">Заявка успешно отправлена! Вскоре мы с Вами свяжемся!</p>');
-                        gtag('event', 'otpravil', {
-                            'event_category': 'forma'
-                        });
-                        console.log('klik Форма Отправка 1');
-                    }
-                }); 
-            }
-        });
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140725386-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-140725386-1');
-    </script>
-
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54411367, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54411367" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-
-    <script>
-    (function(w, d, u, i, o, s, p) {
-    if (d.getElementById(i)) { return; } w['MangoObject'] = o;
-    w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
-    s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
-    p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
-    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
-    mgo({calltracking: {id: 17691, elements: [{"selector":".mgo-number"}]}});
     </script>
         
 </body>
